@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css
+
+
+
+"
+    />
+    <title>Music Player App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="Player">
+        <div class="buttonstop">
+          <i class="fa-solid fa-arrow-left" id="arrow"></i>
+          <i class="fa-solid fa-list" id="list"></i>
+        </div>
+
+        <div id="song1" class="song">
+          <img src="./Images/logo1.jpg" alt="image1" />
+          <div class="description">
+            <h3>Shape-of-You</h3>
+            <p>Ed-Sheeran</p>
+          </div>
+          <audio id="audiocontrols">
+            <source src="./Songs/Shape-of-You---Ed-Sheeran(musicdownload.cc).mp3" />
+          </audio>
+        </div>
+  
+        <div id="song2" class="song">
+          <img src="./Images/logo2.jpg" alt="image2" />
+          <div class="description">
+            <h3>Mwaki ft. Sofiya Nzau</h3>
+            <p>Zerb</p>
+          </div>
+          <audio id="audiocontrols">
+            <source src="./Songs/Zerb Mwaki ft. Sofiya Nzau.mp3" />
+          </audio>
+        </div>
+
+          <div class="time-song">
+            <div id="time-display-start">0:00</div>
+
+            <input type="range" min="0" value="0" id="progress" />
+            <div id="time-display-end">0:00</div>
+          </div>
+
+          <div class="buttonsbottom">
+            <i class="fa-solid fa-backward" id="backward"></i>
+            <i class="fa-solid fa-circle-play" id="play"></i>
+            <i class="fa-solid fa-forward" id="forward"></i>
+          </div>
+          <div class="volumecontrol">
+            <i class="fa-solid fa-volume-off" id="minvol"></i>
+            <input
+              type="range"
+              id="volume"
+              min="0"
+              max="100"
+              value="100"
+              step="1"
+            />
+            <i class="fa-solid fa-volume-high" id="maxvol"></i>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
